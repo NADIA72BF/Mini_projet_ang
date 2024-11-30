@@ -1,0 +1,19 @@
+<h2>Teachers</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Department</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let teacher of teachers">
+          <td>{{ teacher.teacher_id }}</td>
+          <td>{{ teacher.first_name }} {{ teacher.last_name }}</td>
+          <td>{{ teacher.email }}</td>
+          <td>{{ teacher.department }}</td>
+        </tr>
+      </tbody>
+    </table>
